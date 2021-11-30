@@ -44,7 +44,7 @@ header {
 }
 
 .search-container {
-  background-color: #21212c;
+  background: #21212c;
   height: 60px;
   border-radius: 10px;
   border: 2px solid #222328;
@@ -74,7 +74,7 @@ header {
 }
 
 .button-container {
-  background-color: #0099cc;
+  background: #0099cc;
   width: 100px;
   display: flex;
   justify-content: center;
@@ -89,7 +89,7 @@ header {
 }
 
 .jobs-list {
-  background-color: #11121a;
+  background: #11121a;
   max-width: 1250px;
   width: 100%;
   height: 100vh;
@@ -105,22 +105,22 @@ header {
 }
 
 .jobs-container {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(3, 1fr);
   background: #11121a;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
 .job-tile {
-  background-color: #21212c;
-  border-radius: 10px;
-  cursor: pointer;
+  background: #21212c;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 10px;
   color: white;
-  padding: 30px;
+  cursor: pointer;
   transition: transform 0.2s;
+  padding: 30px;
 }
 
 .job-tile:hover {
@@ -140,18 +140,18 @@ header {
 }
 
 .rolename {
-  margin: 20px 0px;
+  padding: 20px 0px;
 }
 
 .rolename span {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .description {
-  flex-grow: 1;
   height: 105px;
   overflow: hidden;
-  font-size: 16px;
+  flex-grow: 1;
+  font-size: 18px;
   color: #96939b;
 }
 
@@ -164,28 +164,34 @@ header {
 }
 
 .button {
-  flex: 1;
+  background: #2e2e39;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
   border-radius: 10px;
   color: #96939b;
-  background-color: #2e2e39;
   font-size: 14px;
 }
 
 .button:hover {
-  background-color: #4f4f63;
+  background: #4f4f63;
 }
 
 .apply-now {
   color: white;
-  background-color: #0099cc;
+  background: #0086b3;
   margin-right: 15px;
 }
 
+.button a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 .apply-now:hover {
-  background: #33ccff;
+  background: #0099cc;
 }
 
 @media screen and (max-width: 930px) {
